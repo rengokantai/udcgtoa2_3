@@ -1,17 +1,17 @@
 /**
  * Created by Hernan Y.Ke on 2016/2/16.
  */
-import {Component} from 'angular2/core';
+import {Component,Input} from 'angular2/core';
 
 @Component({
     selector:'binding',
     template:`
     <h2>{{name}}{{yname}}</h2>
     `,
-    inputs:['name: myname','yname:yourname']
+    inputs:['name: myname']
 })
 
 export class BindComponent{
     name = '';
-    yname=1;
+    @Input('yourname') yname=1;
 }
