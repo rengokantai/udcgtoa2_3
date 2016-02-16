@@ -6,12 +6,12 @@ import {Component} from 'angular2/core';
 @Component({
     selector:'binding',
     template:`
-    <h2>{{myname}}{{yourname}}</h2>
+    <h2>{{name}}{{yname}}</h2>
     `,
-    inputs:['myname','yourname']
+    inputs:['name: myname','yname:yourname']
 })
 
 export class BindComponent{
-    myname = '';
-    yourname=1;
+    name = '';
+    yname=1;
 }
